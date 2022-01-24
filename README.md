@@ -1,4 +1,4 @@
-# RATS Terms Cheat Sheet
+# RATS Cheat Sheet
 
 ## Architecture
 
