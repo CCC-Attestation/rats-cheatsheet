@@ -1,0 +1,18 @@
+@startuml
+
+agent "Endorser" as E
+agent "Verifier" as V
+agent "Reference Value Provider" as RVP
+agent "Verifier Owner" as VO
+agent "Relying Party Owner" as RPO
+agent "Attester" as A
+agent "Relying Party" as RP
+
+E -do-> V : Endorsement
+RVP -do-> V : Reference \n Values
+VO -do-> V : Appraisal \n Policy \n for Evidence
+RPO -do-> RP : Appraisal \n Policy for \n Attestation \n Results
+A -up-> V : Evidence
+RP -up-> V : Attestation \n Results
+
+@enduml

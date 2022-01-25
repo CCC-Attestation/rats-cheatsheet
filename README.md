@@ -2,33 +2,8 @@
 
 ## Architecture at a Glance
 
-```
-    ************   *************    ************    *****************
-    * Endorser *   * Reference *    * Verifier *    * Relying Party *
-    ************   * Value     *    *  Owner   *    *  Owner        *
-       |           * Provider  *    ************    *****************
-       |           *************          |                 |
-       |                  |               |                 |
-       |Endorsements      |Reference      |Appraisal        |Appraisal
-       |                  |Values         |Policy           |Policy for
-       |                  |               |for              |Attestation
-       '-----------.      |               |Evidence         |Results
-                   |      |               |                 |
-                   |      |               |                 |
-                   v      v               v                 |
-                 .---------------------------.              |
-          .----->|          Verifier         |------.       |
-          |      '---------------------------'      |       |
-          |                                         |       |
-          |                              Attestation|       |
-          |                              Results    |       |
-          | Evidence                                |       |
-          |                                         |       |
-          |                                         v       v
-    .----------.                                .---------------.
-    | Attester |                                | Relying Party |
-    '----------'                                '---------------'
-```
+![](images/arch.png)
+
 (This is a verbatim copy of [Figure 1](https://www.ietf.org/archive/id/draft-ietf-rats-architecture-14.html#figure-1) from the RATS architecture document.)
 
 ## Objectives and Mechanisms
@@ -177,34 +152,11 @@ These two basic patterns can be combined in more complicated topologies.
 ### Background Check
 
 In <a name="bg-check">**Background check**</a> the [Attester](#attester) presents [Evidence](#evidence) to the [Relying Party](#rp) which in turn asks the [Verifier](#verifier) for appraisal.
-```
-    |    Evidence   |
-    o-------------->|
-    |               |       Evidence      |
-    |               o-------------------->|
-    |               | Attestation Results |
-    |               |<--------------------o
-    |               |                     |
-.---+----.   .------+------.          .---+----.
-|Attester|   |Relying Party|          |Verifier|
-'--------'   '-------------'          '--------'
-```
+
+![](images/background-check.png)
 
 ### Passport
 
 When using the <a name="passport">**Passport**</a> pattern, the [Attester](#attester) presents [Evidence](#evidence) to the [Verifier](#verifier) which appraises it and returns an [Attestation Result](#ar).  Subsequently, when the Attester and [Relying Party](#rp) need to interact, the former presents the Attestation Result previously obtained to the latter.
 
-```
-    |             Evidence                |
-    o------------------------------------>|
-    |        Attestation Results          |
-    |<------------------------------------o
-    |                                     |
-    o--------------------->|              |
-    | Attestation Results  |              |
-    |                      |              |
-.---+----.          .------+------.   .---+----.
-|Attester|          |Relying Party|   |Verifier|
-'--------'          '-------------'   '--------'
-```
-
+![](images/passport.png)

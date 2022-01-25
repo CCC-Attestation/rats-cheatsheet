@@ -1,0 +1,13 @@
+@startuml
+
+participant "Relying Party" as RP
+participant "Attester" as A
+participant "Verifier" as V
+
+group Passport pattern
+	A -> V: Evidence
+	V -> A: Attestation Results
+	A -> RP: Attestation Results
+end
+
+@enduml
