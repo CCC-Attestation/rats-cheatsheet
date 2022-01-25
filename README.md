@@ -154,7 +154,7 @@ TODO(tho)
 
 The architecture defines two basic interaction patterns:
 
-* In <a name="bg-check">**Background check**</a> the Attester presents Evidence to the Relying Party which in turn asks the Verifier for appraisal.
+* In <a name="bg-check">**Background check**</a> the [Attester](#attester) presents [Evidence](#evidence) to the [Relying Party](#rp) which in turn asks the [Verifier](#verifier) for appraisal.
 ```
     |    Evidence   |
     o-------------->|
@@ -168,7 +168,7 @@ The architecture defines two basic interaction patterns:
 '--------'   '-------------'          '--------'
 ```
 
-* When using <a name="passport">**Passport**</a>, the Attester presents Evidence to the Verifier which appraises it and returns an Attestation Result.  Subsequently, when the Attester and Relying Party need to interact, the former presents the Attestation Result previously obtained to the latter.
+* When using <a name="passport">**Passport**</a>, the [Attester](#attester) presents [Evidence](#evidence) to the [Verifier](#verifier) which appraises it and returns an [Attestation Result](#ar).  Subsequently, when the Attester and [Relying Party](#rp) need to interact, the former presents the Attestation Result previously obtained to the latter.
 
 ```
     |             Evidence                |
