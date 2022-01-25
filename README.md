@@ -155,7 +155,7 @@ TODO(tho)
 
 ## Interaction Patterns
 
-The architecture defines two basic interaction patterns which are given the names "Background check" and "Passport".
+The architecture defines two basic interaction patterns which are given the names [Background check](#bg-check) and [Passport](#passport).
 
 These two basic patterns can be combined in more complicated topologies.
 
