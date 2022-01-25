@@ -36,7 +36,7 @@
 
 * A <a name="verifier">**Verifier**</a> appraises attestation [Evidence](#evidence) from an [Attester](#attester) and produces an [Attestation Result](#ar).  Appraisal is conducted according to an [Appraisal Policy for Evidence](#apfe).  Typically, [Evidence](#evidence) is compared against any applicable [Reference Values](#ref-val).  Additionally, any [Endorsements](#endo) associated with the [Attester](#attester) are also used as input into the appraisal process.
 
-* A <a name="rp">**Relying Party**</a> appraises [Attestation Results](#ar) associated with the [Attester](#attester)'s [Evidence](#evidence) and produces a trust decision regarding the [Attester](#attester).  Appraisal is conducted according to a local [Appraisal Policy for Attestation Results](#apfar).
+* A <a name="rp">**Relying Party**</a> appraises [Attestation Results](#ar) associated with the [Attester](#attester)'s [Evidence](#evidence) and produces a trust decision regarding the [Attester](#attester).  Appraisal is conducted according to a [Appraisal Policy for Attestation Results](#apfar).
 
 ### Supply Chain Roles
 
