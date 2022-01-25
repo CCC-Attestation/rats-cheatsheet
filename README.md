@@ -128,15 +128,60 @@ An [Attester](#attester) consists of at least one [Attesting Environment](#ae) a
 Attesters can be chained, e.g., DICE:
 
 ```
- .--------------------------------------------------.
- | .-----.   .------------------------------------. |
- | | RoT |<--| TE_0                               | |
- | '-----'   | .------.   .---------------------. | |
- |           | | AE_1 |<--| TE_1                | | |
- |           | '------'   | .------.   .------. | | |
+   Evidence_0   Evidence_1   Evidence_2
+       ^            ^            ^
+ .-----|------------|------------|------------------.
+ | .---+-.   .------|------------|----------------. |
+ | | RoT |<--| TE_0 |            |                | |
+ | '-----'   | .----+-.   .------|--------------. | |
+ |           | | AE_1 |<--| TE_1 |              | | |
+ |           | '------'   | .----+-.   .------. | | |
  |           |            | | AE_2 |<--| TE_2 | | | |
  |           |            | '------'   '------' | | |
  |           |            '---------------------' | |
  |           '------------------------------------' |
  '--------------------------------------------------'
 ```
+## Fresheness Models
+
+TODO(tho)
+
+* Nonce
+* Timestamp
+* Epoch Id
+
+## Interaction Patterns
+
+The architecture defines two basic interaction patterns:
+
+* In <a name="bg-check">**Background check**</a> the Attester presents Evidence to the Relying Party which in turn asks the Verifier for appraisal.
+```
+    |    Evidence   |
+    o-------------->|
+    |               |       Evidence      |
+    |               o-------------------->|
+    |               | Attestation Results |
+    |               |<--------------------o
+    |               |                     |
+.---+----.   .------+------.          .---+----.
+|Attester|   |Relying Party|          |Verifier|
+'--------'   '-------------'          '--------'
+```
+
+* When using <a name="passport">**Passport**</a>, the Attester presents Evidence to the Verifier which appraises it and returns an Attestation Result.  Subsequently, when the Attester and Relying Party need to interact, the former presents the Attestation Result previously obtained to the latter.
+
+```
+    |             Evidence                |
+    o------------------------------------>|
+    |        Attestation Results          |
+    |<------------------------------------o
+    |                                     |
+    o--------------------->|              |
+    | Attestation Results  |              |
+    |                      |              |
+.---+----.          .------+------.   .---+----.
+|Attester|          |Relying Party|   |Verifier|
+'--------'          '-------------'   '--------'
+```
+
+These two basic patterns can be combined in more complicated topologies.
