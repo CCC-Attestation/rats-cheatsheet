@@ -39,14 +39,14 @@ The objective is achieved by a two-stage appraisal process mediated by a trusted
 
 The two stages are as follows:
 
-1. <a name="evidence-appraisal">**Evidence Appraisal**</a> is the evaluation of the trustworthiness of Evidence coming from an Attester.  It takes [Evidence](#evidence) as input and produces [Attestation Results](#ar) as output.  It is conducted according to an [Appraisal Policy for Evidence](#apfe).  Typically, [Evidence](#evidence) is compared against any applicable [Reference Values](#ref-val).  Additionally, any [Endorsements](#endo) associated with the [Attester](#attester) are also supplied as input into the appraisal process.
+1. <a name="evidence-appraisal">**Evidence Appraisal**</a> is the evaluation of the trustworthiness of [Evidence](#evidence) coming from an [Attester](#attester).  It takes Evidence as input and produces [Attestation Results](#ar) as output.  It is conducted according to an [Appraisal Policy for Evidence](#apfe).  Typically, Evidence is compared against any applicable [Reference Values](#ref-val).  Additionally, any [Endorsements](#endo) associated with the Attester are also supplied as input into the appraisal process.
 
 2. <a name="ar-appraisal">**Attestation Results Appraisal**</a> is the evaluation of the [Attestation Results](#ar)
- originating from a trusted [Verifier](#verifier) and associated with the [Attester](#attester)'s [Evidence](#evidence).  The result of the appraisal process is a trust decision regarding the [Attester](#attester).  Appraisal is conducted according to a [Appraisal Policy for Attestation Results](#apfar).
+ originating from a trusted [Verifier](#verifier) and associated with the [Attester](#attester)'s [Evidence](#evidence).  The result of the appraisal process is a trust decision regarding the Attester.  Appraisal is conducted according to a [Appraisal Policy for Attestation Results](#apfar).
 
 ## Roles
 
-The architecture pre-defines a number of fundamental roles (one per box in Figure 1).  Note that in general roles can be coalesced into the same entity or split among different entities.  For example the same supply chain entity could be both an Endorser and a Reference Value Provider, a Relying Party and a Verifier could be co-located, etc.
+The architecture pre-defines a number of fundamental roles (one per box in Figure 1).  Note that in general roles can be coalesced into the same entity or split among different entities.  For example the same supply chain entity could be at the same time an Endorser and a Reference Value Provider, a Relying Party and a Verifier could be co-located, etc.
 
 ### Main Roles
 
@@ -60,7 +60,7 @@ There are three main roles in the architecture:
 
 ### Supply Chain Roles
 
-The architecture defines two roles to for supply chain actors according to the kind of input they supply:
+The architecture defines two logical roles for supply chain actors according to the kind of input they supply:
 
 * An <a name="endorser">**Endorser**</a> supplies [Endorsements](#endo) to the [Verifier](#verifier).
 
@@ -68,7 +68,7 @@ The architecture defines two roles to for supply chain actors according to the k
 
 ### Administrative Roles
 
-Finally, the architecture defines two roles to model admin interactions with Verifiers and Relying Parties:
+Finally, the architecture defines two roles to model authorised administrative interactions with Verifiers and Relying Parties:
 
 * A <a name="verif-owner">**Verifier Owner**</a> is authorised to configure [Appraisal Policy for Evidence](#apfe) in a [Verifier](#verifier).
 
@@ -76,13 +76,13 @@ Finally, the architecture defines two roles to model admin interactions with Ver
 
 ## Protocol Messages
 
-* <a name="evidence">**Evidence**</a> is a statement made by the [Attester](#attester) containing a set of trust metrics associated with its *current* state.  Typically, such trust metrics are encoded into key/value pairs also known as attestation <a name="claims">**Claims**</a>.  Claims may include measurements related to the boot sequence, measurements of the runtime state, and also telemetry (e.g., values sampled from a "secure" sensor).
+* <a name="evidence">**Evidence**</a> is a statement made by the [Attester](#attester) containing a set of trust metrics associated with the Attester's *current* state.  Typically, such trust metrics are encoded into key/value pairs also known as attestation <a name="claims">**Claims**</a>.  Claims may include measurements related to the boot sequence, measurements of the runtime state, and also telemetry (e.g., values sampled from a "secure" sensor).
 
-* An <a name="ar">**Attestation Result**</a> is a statement made by the [Verifier](#verifier) regarding the trustworthiness of [Evidence](#evidence) produced by an [Attester](#attester).  It is the result of the Evidence appraisal process (see [Verifier](#verifier)).  It is expected that Attestation Results are more concise and normalised than the associated [Evidence](#evidence).
+* An <a name="ar">**Attestation Result**</a> is a statement made by the [Verifier](#verifier) regarding the trustworthiness of [Evidence](#evidence) produced by an [Attester](#attester).  It is the result of the Evidence appraisal process (see [Verifier](#verifier)).  It is expected that Attestation Results are more concise and normalised than the associated Evidence.
 
-* <a name="endo">**Endorsements**</a> are Attester's features that are not explicitly found in attestation Evidence.  For example: a public key coupled with the Attester's signing key, a certification associated with the attesting device, etc.
+* <a name="endo">**Endorsements**</a> are [Attester](#attester)'s features that are not explicitly found in attestation [Evidence](#evidence).  For example: a public key coupled with the Attester's signing key, a security certification associated with the attesting device, etc.
 
-* <a name="ref-val">**Reference Values**</a> are "known good" values for the trust metrics reported by an Attester.  They are "known good" in the sense that they describe the desired state of a trustable device.  A number of related [Claims](#claims) are expected to be found in attestation Evidence which will be matched against the corresponding Reference Values during the [Evidence Appraisal](#evidence-appraisal) procedure.
+* <a name="ref-val">**Reference Values**</a> are "known good" values for the trust metrics reported by an [Attester](#attester).  They are "known good" in the sense that they describe the desired state of a trustable device.  A number of related [Claims](#claims) are expected to be found in attestation [Evidence](#evidence) which will be matched against the corresponding [Reference Values](#ref-val) during the [Evidence Appraisal](#evidence-appraisal) procedure.
 
 ### Policy Constructs
 
@@ -92,7 +92,7 @@ Finally, the architecture defines two roles to model admin interactions with Ver
 
 ## Attester Structure
 
-An Attester consists of at least one Attesting Environment and at least one Target Environment.  Attesting and Target Environments may be combined.
+An [Attester](#attester) consists of at least one [Attesting Environment](#ae) and at least one [Target Environment](#te).  Attesting and Target Environments may be combined.
 
 ```
                             ^ 
@@ -121,9 +121,9 @@ An Attester consists of at least one Attesting Environment and at least one Targ
   '------------------------------------'
 ```
 
-* An <a name="ae">Attesting Environment</a> is the measuring portion of an Attester.  It collects the relevant information about the [Target Environment](#te) by reading system registers and variables, calling into subsystems, taking measurements on code, memory, or other security related assets.  It then formats the [Claims](#claims) appropriately, and typically uses private key material to generate attestation [Evidence](#evidence) about itself.
+* An <a name="ae">Attesting Environment</a> is the measuring portion of an [Attester](#attester).  It collects the relevant information about the [Target Environment](#te) by reading system registers and variables, calling into subsystems, taking measurements on code, memory, or other security related assets.  It then formats the [Claims](#claims) appropriately, and typically uses private key material to generate attestation [Evidence](#evidence) about itself.
 
-* A <a name="te">Target Environment</a> represents the measured portion of an Attester.  What gets measured is anything that can have an impact on the correctness of the trusted computing base.
+* A <a name="te">Target Environment</a> represents the measured portion of an [Attester](#attester).  Anything that may have an impact on the correctness of the trusted computing base is a candidate target.
 
 Attesters can be chained, e.g., DICE:
 
