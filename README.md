@@ -144,17 +144,24 @@ Attesters can be chained, e.g., DICE:
 ```
 ## Fresheness Models
 
+### Nonce Based
 TODO(tho)
 
-* Nonce
-* Timestamp
-* Epoch Id
+### Timestamp Based
+TODO(tho)
+
+### Epoch Id Based
+TODO(tho)
 
 ## Interaction Patterns
 
-The architecture defines two basic interaction patterns:
+The architecture defines two basic interaction patterns which are given the names "Background check" and "Passport".
 
-* In <a name="bg-check">**Background check**</a> the [Attester](#attester) presents [Evidence](#evidence) to the [Relying Party](#rp) which in turn asks the [Verifier](#verifier) for appraisal.
+These two basic patterns can be combined in more complicated topologies.
+
+### Background Check
+
+In <a name="bg-check">**Background check**</a> the [Attester](#attester) presents [Evidence](#evidence) to the [Relying Party](#rp) which in turn asks the [Verifier](#verifier) for appraisal.
 ```
     |    Evidence   |
     o-------------->|
@@ -168,7 +175,9 @@ The architecture defines two basic interaction patterns:
 '--------'   '-------------'          '--------'
 ```
 
-* When using <a name="passport">**Passport**</a>, the [Attester](#attester) presents [Evidence](#evidence) to the [Verifier](#verifier) which appraises it and returns an [Attestation Result](#ar).  Subsequently, when the Attester and [Relying Party](#rp) need to interact, the former presents the Attestation Result previously obtained to the latter.
+### Passport
+
+When using <a name="passport">**Passport**</a>, the [Attester](#attester) presents [Evidence](#evidence) to the [Verifier](#verifier) which appraises it and returns an [Attestation Result](#ar).  Subsequently, when the Attester and [Relying Party](#rp) need to interact, the former presents the Attestation Result previously obtained to the latter.
 
 ```
     |             Evidence                |
@@ -184,4 +193,3 @@ The architecture defines two basic interaction patterns:
 '--------'          '-------------'   '--------'
 ```
 
-These two basic patterns can be combined in more complicated topologies.
