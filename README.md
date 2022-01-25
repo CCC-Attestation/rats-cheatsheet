@@ -84,7 +84,7 @@ Finally, the architecture defines two roles to model authorised administrative i
 
 * <a name="ref-val">**Reference Values**</a> are "known good" values for the trust metrics reported by an [Attester](#attester).  They are "known good" in the sense that they describe the desired state of a trustable device.  A number of related [Claims](#claims) are expected to be found in attestation [Evidence](#evidence) which will be matched against the corresponding [Reference Values](#ref-val) during the [Evidence Appraisal](#evidence-appraisal) procedure.
 
-### Policy Constructs
+## Policy Constructs
 
 * An <a name="apfar">**Attestation Policy for Attestation Results**</a> is the set of rules that define the [Evidence Appraisal](#evidence-appraisal) procedure.
 
