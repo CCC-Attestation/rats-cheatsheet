@@ -1,10 +1,10 @@
 # RATS Cheat Sheet
 
+All the pictures are extracted from the [RATS architecture document](https://www.ietf.org/archive/id/draft-ietf-rats-architecture-14.html).
+
 ## Architecture at a Glance
 
 ![](images/arch.svg)
-
-(This is a verbatim copy of [Figure 1](https://www.ietf.org/archive/id/draft-ietf-rats-architecture-14.html#figure-1) from the RATS architecture document.)
 
 ## Objectives and Mechanisms
 
