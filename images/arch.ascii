@@ -1,0 +1,25 @@
+    .----------.   .-----------.    .----------.    .---------------.
+    | Endorser |   | Reference |    | Verifier |    | Relying Party |
+    '--+-------'   | Value     |    |  Owner   |    |  Owner        |
+       |           | Provider  |    '-----+----'    '-------+-------'
+       |           '------+----'          |                 |
+       |                  |               |                 |
+       |Endorsements      |Reference      |Appraisal        |Appraisal
+       |                  |Values         |Policy           |Policy for
+       |                  |               |for              |Attestation
+       '-----------.      |               |Evidence         |Results
+                   |      |               |                 |
+                   |      |               |                 |
+                   v      v               v                 |
+                 .---------------------------.              |
+          .----->|          Verifier         +------.       |
+          |      '---------------------------'      |       |
+          |                                         |       |
+          |                              Attestation|       |
+          |                              Results    |       |
+          | Evidence                                |       |
+          |                                         |       |
+          |                                         v       v
+    .-----+----.                                .---------------.
+    | Attester |                                | Relying Party |
+    '----------'                                '---------------'

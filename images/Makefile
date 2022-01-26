@@ -1,14 +1,14 @@
-plantuml ?= $(shell command -v plantuml)
-ifeq ($(strip $(plantuml)),)
-$(error required plantuml not found. To install plantuml see https://plantuml.com/starting)
+aasvg ?= $(shell command -v aasvg)
+ifeq ($(strip $(aasvg)),)
+$(error required aasvg not found.  To install it: npm install -g aasvg)
 endif
 
-%.png: %.puml ; cat $< | plantuml -pipe > $@
+%.svg: %.ascii ; cat $< | aasvg --backdrop > $@
 
-PUML_FILES := $(wildcard *.puml)
+ASCII_FILES := $(wildcard *.ascii)
 
-PNG_FILES := $(PUML_FILES:.puml=.png)
+SVG_FILES := $(ASCII_FILES:.ascii=.svg)
 
-pngs: $(PNG_FILES)
+svgs: $(SVG_FILES)
 
-clean: ; $(RM) $(PNG_FILES)
+clean: ; $(RM) $(SVG_FILES)

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="256" width="552" viewBox="0 0 552 256" class="diagram" text-anchor="middle" font-family="monospace" font-size="13px">
+<rect class="backdrop" x="0" y="0" width="552" height="256" rx="3px" ry="3px" fill="white" opacity="0.9"/>
+<path d="M 48,16 L 48,80" fill="none" stroke="black"/>
+<path d="M 48,160 L 48,224" fill="none" stroke="black"/>
+<path d="M 80,88 L 80,160" fill="none" stroke="black"/>
+<path d="M 120,80 L 120,152" fill="none" stroke="black"/>
+<path d="M 152,16 L 152,80" fill="none" stroke="black"/>
+<path d="M 152,160 L 152,224" fill="none" stroke="black"/>
+<path d="M 272,160 L 272,224" fill="none" stroke="black"/>
+<path d="M 384,160 L 384,224" fill="none" stroke="black"/>
+<path d="M 48,16 L 152,16" fill="none" stroke="black"/>
+<path d="M 48,80 L 152,80" fill="none" stroke="black"/>
+<path d="M 48,160 L 152,160" fill="none" stroke="black"/>
+<path d="M 272,160 L 384,160" fill="none" stroke="black"/>
+<path d="M 152,176 L 264,176" fill="none" stroke="black"/>
+<path d="M 48,224 L 152,224" fill="none" stroke="black"/>
+<path d="M 272,224 L 384,224" fill="none" stroke="black"/>
+<polygon class="arrowhead" points="272,176 260,170.4 260,181.6 " fill="black" transform="rotate(0,264,176)"/>
+<polygon class="arrowhead" points="128,152 116,146.4 116,157.6 " fill="black" transform="rotate(90,120,152)"/>
+<polygon class="arrowhead" points="88,88 76,82.4 76,93.6 " fill="black" transform="rotate(270,80,88)"/>
+<g class="text">
+<text x="228" y="36">Compare Evidence</text>
+<text x="100" y="52">Verifier</text>
+<text x="260" y="52">against appraisal policy</text>
+<text x="36" y="116">Evidence</text>
+<text x="176" y="116">Attestation</text>
+<text x="156" y="132">Result</text>
+<text x="472" y="180">Compare Attestation</text>
+<text x="100" y="196">Attester</text>
+<text x="208" y="196">Attestation</text>
+<text x="328" y="196">Relying</text>
+<text x="452" y="196">Result against</text>
+<text x="188" y="212">Result</text>
+<text x="328" y="212">Party</text>
+<text x="460" y="212">appraisal policy</text>
+</g>
+</svg>

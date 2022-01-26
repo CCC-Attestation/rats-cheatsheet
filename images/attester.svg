@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="464" width="312" viewBox="0 0 312 464" class="diagram" text-anchor="middle" font-family="monospace" font-size="13px">
+<rect class="backdrop" x="0" y="0" width="312" height="464" rx="3px" ry="3px" fill="white" opacity="0.9"/>
+<path d="M 8,128 L 8,432" fill="none" stroke="black"/>
+<path d="M 24,16 L 24,80" fill="none" stroke="black"/>
+<path d="M 48,160 L 48,224" fill="none" stroke="black"/>
+<path d="M 152,336 L 152,400" fill="none" stroke="black"/>
+<path d="M 168,224 L 168,328" fill="none" stroke="black"/>
+<path d="M 184,160 L 184,224" fill="none" stroke="black"/>
+<path d="M 216,88 L 216,336" fill="none" stroke="black"/>
+<path d="M 264,336 L 264,400" fill="none" stroke="black"/>
+<path d="M 288,16 L 288,80" fill="none" stroke="black"/>
+<path d="M 304,128 L 304,432" fill="none" stroke="black"/>
+<path d="M 24,16 L 288,16" fill="none" stroke="black"/>
+<path d="M 24,80 L 288,80" fill="none" stroke="black"/>
+<path d="M 8,128 L 208,128" fill="none" stroke="black"/>
+<path d="M 224,128 L 304,128" fill="none" stroke="black"/>
+<path d="M 48,160 L 184,160" fill="none" stroke="black"/>
+<path d="M 48,224 L 184,224" fill="none" stroke="black"/>
+<path d="M 152,336 L 264,336" fill="none" stroke="black"/>
+<path d="M 152,400 L 264,400" fill="none" stroke="black"/>
+<path d="M 8,432 L 304,432" fill="none" stroke="black"/>
+<polygon class="arrowhead" points="224,88 212,82.4 212,93.6 " fill="black" transform="rotate(270,216,88)"/>
+<polygon class="arrowhead" points="176,328 164,322.4 164,333.6 " fill="black" transform="rotate(90,168,328)"/>
+<g class="text">
+<text x="156" y="52">Verifier</text>
+<text x="84" y="180">Target</text>
+<text x="104" y="196">Environment</text>
+<text x="260" y="212">Evidence</text>
+<text x="120" y="276">Collect</text>
+<text x="124" y="292">Claims</text>
+<text x="200" y="356">Attesting</text>
+<text x="208" y="372">Environment</text>
+<text x="164" y="420">Attester</text>
+</g>
+</svg>

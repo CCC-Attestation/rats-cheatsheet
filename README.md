@@ -2,7 +2,7 @@
 
 ## Architecture at a Glance
 
-![](images/arch.png)
+![](images/arch.svg)
 
 (This is a verbatim copy of [Figure 1](https://www.ietf.org/archive/id/draft-ietf-rats-architecture-14.html#figure-1) from the RATS architecture document.)
 
@@ -69,32 +69,7 @@ Finally, the architecture defines two roles to model authorised administrative i
 
 An [Attester](#attester) consists of at least one [Attesting Environment](#ae) and at least one [Target Environment](#te).  Attesting and Target Environments may be combined.
 
-```
-                            ^ 
-                            |
-                            | Evidence
-                            |
-  .-------------------------|----------.
-  |                         |          |
-  |   .----------------.    |          |
-  |   | Target         |    |          |
-  |   | Environment    |    |          |
-  |   |                |    |          |
-  |   '----------------'    |          |
-  |                   |     |          |
-  |                   |     |          |
-  |          Collect  |     |          |
-  |           Claims  |     |          |
-  |                   |     |          |
-  |                   v     |          |
-  |                 .-------------.    |
-  |                 | Attesting   |    |
-  |                 | Environment |    |
-  |                 |             |    |
-  |                 '-------------'    |
-  |               Attester             |
-  '------------------------------------'
-```
+![](images/attester.svg)
 
 * An <a name="ae">Attesting Environment</a> is the measuring portion of an [Attester](#attester).  It collects the relevant information about the [Target Environment](#te) by reading system registers and variables, calling into subsystems, taking measurements on code, memory, or other security related assets.  It then formats the [Claims](#claims) appropriately, and typically uses private key material to generate attestation [Evidence](#evidence) about itself.
 
@@ -102,21 +77,8 @@ An [Attester](#attester) consists of at least one [Attesting Environment](#ae) a
 
 Attesters can be chained, e.g., DICE:
 
-```
-   Evidence_0   Evidence_1   Evidence_2
-       ^            ^            ^
- .-----|------------|------------|------------------.
- | .---+-.   .------|------------|----------------. |
- | | RoT |<--| TE_0 |            |                | |
- | '-----'   | .----+-.   .------|--------------. | |
- |           | | AE_1 |<--| TE_1 |              | | |
- |           | '------'   | .----+-.   .------. | | |
- |           |            | | AE_2 |<--| TE_2 | | | |
- |           |            | '------'   '------' | | |
- |           |            '---------------------' | |
- |           '------------------------------------' |
- '--------------------------------------------------'
-```
+![](images/dice.svg)
+
 ## Fresheness Methods
 
 The architecture describes three methods to ascertain the point in time (called "epoch") an [Evidence](#evidence) or [Attestation Result](#ar) has been produced.
@@ -153,10 +115,10 @@ These two basic patterns can be combined in more complicated topologies.
 
 In <a name="bg-check">**Background check**</a> the [Attester](#attester) presents [Evidence](#evidence) to the [Relying Party](#rp) which in turn asks the [Verifier](#verifier) for appraisal.
 
-![](images/background-check.png)
+![](images/background-check.svg)
 
 ### Passport
 
 When using the <a name="passport">**Passport**</a> pattern, the [Attester](#attester) presents [Evidence](#evidence) to the [Verifier](#verifier) which appraises it and returns an [Attestation Result](#ar).  Subsequently, when the Attester and [Relying Party](#rp) need to interact, the former presents the Attestation Result previously obtained to the latter.
 
-![](images/passport.png)
+![](images/passport.svg)

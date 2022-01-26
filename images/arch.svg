@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="432" width="552" viewBox="0 0 552 432" class="diagram" text-anchor="middle" font-family="monospace" font-size="13px">
+<rect class="backdrop" x="0" y="0" width="552" height="432" rx="3px" ry="3px" fill="white" opacity="0.9"/>
+<path d="M 8,16 L 8,48" fill="none" stroke="black"/>
+<path d="M 8,368 L 8,400" fill="none" stroke="black"/>
+<path d="M 32,48 L 32,160" fill="none" stroke="black"/>
+<path d="M 56,240 L 56,368" fill="none" stroke="black"/>
+<path d="M 96,16 L 96,48" fill="none" stroke="black"/>
+<path d="M 96,368 L 96,400" fill="none" stroke="black"/>
+<path d="M 112,224 L 112,256" fill="none" stroke="black"/>
+<path d="M 128,16 L 128,80" fill="none" stroke="black"/>
+<path d="M 128,160 L 128,216" fill="none" stroke="black"/>
+<path d="M 184,80 L 184,216" fill="none" stroke="black"/>
+<path d="M 224,16 L 224,80" fill="none" stroke="black"/>
+<path d="M 264,16 L 264,64" fill="none" stroke="black"/>
+<path d="M 312,64 L 312,216" fill="none" stroke="black"/>
+<path d="M 336,224 L 336,256" fill="none" stroke="black"/>
+<path d="M 352,16 L 352,64" fill="none" stroke="black"/>
+<path d="M 360,368 L 360,400" fill="none" stroke="black"/>
+<path d="M 392,16 L 392,64" fill="none" stroke="black"/>
+<path d="M 392,240 L 392,360" fill="none" stroke="black"/>
+<path d="M 456,64 L 456,360" fill="none" stroke="black"/>
+<path d="M 488,368 L 488,400" fill="none" stroke="black"/>
+<path d="M 520,16 L 520,64" fill="none" stroke="black"/>
+<path d="M 8,16 L 96,16" fill="none" stroke="black"/>
+<path d="M 128,16 L 224,16" fill="none" stroke="black"/>
+<path d="M 264,16 L 352,16" fill="none" stroke="black"/>
+<path d="M 392,16 L 520,16" fill="none" stroke="black"/>
+<path d="M 8,48 L 96,48" fill="none" stroke="black"/>
+<path d="M 264,64 L 352,64" fill="none" stroke="black"/>
+<path d="M 392,64 L 520,64" fill="none" stroke="black"/>
+<path d="M 128,80 L 224,80" fill="none" stroke="black"/>
+<path d="M 32,160 L 128,160" fill="none" stroke="black"/>
+<path d="M 112,224 L 336,224" fill="none" stroke="black"/>
+<path d="M 56,240 L 104,240" fill="none" stroke="black"/>
+<path d="M 336,240 L 392,240" fill="none" stroke="black"/>
+<path d="M 112,256 L 336,256" fill="none" stroke="black"/>
+<path d="M 8,368 L 96,368" fill="none" stroke="black"/>
+<path d="M 360,368 L 488,368" fill="none" stroke="black"/>
+<path d="M 8,400 L 96,400" fill="none" stroke="black"/>
+<path d="M 360,400 L 488,400" fill="none" stroke="black"/>
+<polygon class="arrowhead" points="464,360 452,354.4 452,365.6 " fill="black" transform="rotate(90,456,360)"/>
+<polygon class="arrowhead" points="400,360 388,354.4 388,365.6 " fill="black" transform="rotate(90,392,360)"/>
+<polygon class="arrowhead" points="320,216 308,210.4 308,221.6 " fill="black" transform="rotate(90,312,216)"/>
+<polygon class="arrowhead" points="192,216 180,210.4 180,221.6 " fill="black" transform="rotate(90,184,216)"/>
+<polygon class="arrowhead" points="136,216 124,210.4 124,221.6 " fill="black" transform="rotate(90,128,216)"/>
+<polygon class="arrowhead" points="112,240 100,234.4 100,245.6 " fill="black" transform="rotate(0,104,240)"/>
+<g class="text">
+<text x="52" y="36">Endorser</text>
+<text x="176" y="36">Reference</text>
+<text x="308" y="36">Verifier</text>
+<text x="456" y="36">Relying Party</text>
+<text x="160" y="52">Value</text>
+<text x="304" y="52">Owner</text>
+<text x="432" y="52">Owner</text>
+<text x="172" y="68">Provider</text>
+<text x="84" y="116">Endorsements</text>
+<text x="224" y="116">Reference</text>
+<text x="352" y="116">Appraisal</text>
+<text x="496" y="116">Appraisal</text>
+<text x="212" y="132">Values</text>
+<text x="340" y="132">Policy</text>
+<text x="500" y="132">Policy for</text>
+<text x="328" y="148">for</text>
+<text x="504" y="148">Attestation</text>
+<text x="348" y="164">Evidence</text>
+<text x="488" y="164">Results</text>
+<text x="228" y="244">Verifier</text>
+<text x="344" y="292">Attestation</text>
+<text x="328" y="308">Results</text>
+<text x="100" y="324">Evidence</text>
+<text x="52" y="388">Attester</text>
+<text x="424" y="388">Relying Party</text>
+</g>
+</svg>

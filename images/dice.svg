@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="240" width="424" viewBox="0 0 424 240" class="diagram" text-anchor="middle" font-family="monospace" font-size="13px">
+<rect class="backdrop" x="0" y="0" width="424" height="240" rx="3px" ry="3px" fill="white" opacity="0.9"/>
+<path d="M 8,48 L 8,208" fill="none" stroke="black"/>
+<path d="M 24,64 L 24,96" fill="none" stroke="black"/>
+<path d="M 56,32 L 56,64" fill="none" stroke="black"/>
+<path d="M 72,64 L 72,96" fill="none" stroke="black"/>
+<path d="M 104,64 L 104,192" fill="none" stroke="black"/>
+<path d="M 120,96 L 120,128" fill="none" stroke="black"/>
+<path d="M 160,32 L 160,96" fill="none" stroke="black"/>
+<path d="M 176,96 L 176,128" fill="none" stroke="black"/>
+<path d="M 208,96 L 208,176" fill="none" stroke="black"/>
+<path d="M 224,128 L 224,160" fill="none" stroke="black"/>
+<path d="M 264,32 L 264,128" fill="none" stroke="black"/>
+<path d="M 280,128 L 280,160" fill="none" stroke="black"/>
+<path d="M 312,128 L 312,160" fill="none" stroke="black"/>
+<path d="M 368,128 L 368,160" fill="none" stroke="black"/>
+<path d="M 384,96 L 384,176" fill="none" stroke="black"/>
+<path d="M 400,64 L 400,192" fill="none" stroke="black"/>
+<path d="M 416,48 L 416,208" fill="none" stroke="black"/>
+<path d="M 8,48 L 48,48" fill="none" stroke="black"/>
+<path d="M 64,48 L 152,48" fill="none" stroke="black"/>
+<path d="M 168,48 L 256,48" fill="none" stroke="black"/>
+<path d="M 272,48 L 416,48" fill="none" stroke="black"/>
+<path d="M 24,64 L 72,64" fill="none" stroke="black"/>
+<path d="M 104,64 L 152,64" fill="none" stroke="black"/>
+<path d="M 168,64 L 256,64" fill="none" stroke="black"/>
+<path d="M 272,64 L 400,64" fill="none" stroke="black"/>
+<path d="M 80,80 L 96,80" fill="none" stroke="black"/>
+<path d="M 24,96 L 72,96" fill="none" stroke="black"/>
+<path d="M 120,96 L 176,96" fill="none" stroke="black"/>
+<path d="M 208,96 L 256,96" fill="none" stroke="black"/>
+<path d="M 272,96 L 384,96" fill="none" stroke="black"/>
+<path d="M 184,112 L 200,112" fill="none" stroke="black"/>
+<path d="M 120,128 L 176,128" fill="none" stroke="black"/>
+<path d="M 224,128 L 280,128" fill="none" stroke="black"/>
+<path d="M 312,128 L 368,128" fill="none" stroke="black"/>
+<path d="M 288,144 L 304,144" fill="none" stroke="black"/>
+<path d="M 224,160 L 280,160" fill="none" stroke="black"/>
+<path d="M 312,160 L 368,160" fill="none" stroke="black"/>
+<path d="M 208,176 L 384,176" fill="none" stroke="black"/>
+<path d="M 104,192 L 400,192" fill="none" stroke="black"/>
+<path d="M 8,208 L 416,208" fill="none" stroke="black"/>
+<polygon class="arrowhead" points="296,144 284,138.4 284,149.6 " fill="black" transform="rotate(180,288,144)"/>
+<polygon class="arrowhead" points="272,32 260,26.4 260,37.6 " fill="black" transform="rotate(270,264,32)"/>
+<polygon class="arrowhead" points="192,112 180,106.4 180,117.6 " fill="black" transform="rotate(180,184,112)"/>
+<polygon class="arrowhead" points="168,32 156,26.4 156,37.6 " fill="black" transform="rotate(270,160,32)"/>
+<polygon class="arrowhead" points="88,80 76,74.4 76,85.6 " fill="black" transform="rotate(180,80,80)"/>
+<polygon class="arrowhead" points="64,32 52,26.4 52,37.6 " fill="black" transform="rotate(270,56,32)"/>
+<g class="text">
+<text x="60" y="20">Evidence_0</text>
+<text x="164" y="20">Evidence_1</text>
+<text x="268" y="20">Evidence_2</text>
+<text x="48" y="84">RoT</text>
+<text x="132" y="84">TE_0</text>
+<text x="148" y="116">AE_1</text>
+<text x="236" y="116">TE_1</text>
+<text x="252" y="148">AE_2</text>
+<text x="340" y="148">TE_2</text>
+</g>
+</svg>
