@@ -1,6 +1,6 @@
 # RATS Cheat Sheet
 
-This is intended as a quick reference to the main concepts defined in the [RATS architecture](https://www.ietf.org/archive/id/draft-ietf-rats-architecture-14.html).  All the pictures are taken from there.
+This is intended as a quick reference to the main concepts defined in the [RATS architecture](https://www.ietf.org/archive/id/draft-ietf-rats-architecture-14.html).  All the pictures (except one) are taken from there.
 
 ## Architecture at a Glance
 
@@ -67,7 +67,7 @@ Finally, the architecture defines two roles to model authorised administrative i
 
 ## Attester Structure
 
-An [Attester](#attester) consists of at least one [Attesting Environment](#ae) and at least one [Target Environment](#te).  Attesting and Target Environments may be combined.
+An [Attester](#attester) consists of at least one [Attesting Environment](#ae) and at least one [Target Environment](#te).  Attesting and Target Environments may be combined.  A single device could host more than one Attester.
 
 ![](images/attester.svg)
 
@@ -95,7 +95,7 @@ Note that the required trustworthy clock may not be available in the TEE.
 
 ### Nonce Based
 
-A non-predictable nonce is sent by the appraising entity, and the nonce is then signed and included along with the [Claims](#claims) in the [Evidence](#evidence) or [Attestation Result](#ar).
+A non-predictable nonce is sent by the appraising entity, and the nonce is then signed and included as one of the [Claims](#claims) in the [Evidence](#evidence) or [Attestation Result](#ar).
 
 ### Epoch ID Based
 
