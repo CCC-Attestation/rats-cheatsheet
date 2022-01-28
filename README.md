@@ -79,7 +79,7 @@ Attesters can be chained, e.g., DICE:
 
 ![](images/dice.svg)
 
-## Fresheness Methods
+## Freshness Methods
 
 The architecture describes three methods to ascertain the point in time (called "epoch") an [Evidence](#evidence) or [Attestation Result](#ar) has been produced.
 
