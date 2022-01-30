@@ -67,7 +67,7 @@ Finally, the architecture defines two roles to model authorised administrative i
 
 ## Attester Structure
 
-An [Attester](#attester) consists of at least one [Attesting Environment](#ae) and at least one [Target Environment](#te).  Attesting and Target Environments may be combined.  A single device could host more than one Attester.
+An [Attester](#attester) consists of at least one [Attesting Environment](#ae) and at least one [Target Environment](#te).
 
 ![](images/attester.svg)
 
@@ -75,7 +75,7 @@ An [Attester](#attester) consists of at least one [Attesting Environment](#ae) a
 
 * A <a name="te">Target Environment</a> represents the measured portion of an [Attester](#attester).  Anything that may have an impact on the correctness of the trusted computing base is a candidate target.
 
-Attesters can be chained, e.g., DICE:
+Note that Attesting and Target Environments may be combined.  A single device could host more than one Attester.  Attesters can be chained, e.g., [DICE](https://trustedcomputinggroup.org/resource/dice-layering-architecture/):
 
 ![](images/dice.svg)
 
