@@ -21,7 +21,7 @@ The two stages are as follows:
 
 ## Roles
 
-The architecture pre-defines a number of fundamental roles (one per box in [Figure 1](#arch-diag)).  Note that in general roles can be coalesced into the same entity or split among different entities.  For example the same supply chain entity could be at the same time an Endorser and a Reference Value Provider, a Relying Party and a Verifier could be co-located, etc.
+The architecture pre-defines a number of fundamental roles (one per box in [Figure 1](#arch-diag)).  Note that in general roles can be coalesced into the same entity or split among different entities.  For example, the same supply chain entity could be at the same time an Endorser and a Reference Value Provider, a Relying Party and a Verifier could be co-located, etc.
 
 ### Main Roles
 
