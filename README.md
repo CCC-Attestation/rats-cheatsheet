@@ -61,9 +61,9 @@ Finally, the architecture defines two roles to model authorised administrative i
 
 ## Policy Constructs
 
-* An <a name="apfar">**Attestation Policy for Attestation Results**</a> is the set of rules that define the [Evidence Appraisal](#evidence-appraisal) procedure.
+* An <a name="apfe">**Appraisal Policy for Evidence**</a> is the set of rules that define the [Evidence Appraisal](#evidence-appraisal) procedure.
 
-* An <a name="apfe">**Attestation Policy for Evidence**</a> is the set of rules that define the [Attestation Results Appraisal](#ar-appraisal) procedure.
+* An <a name="apfar">**Appraisal Policy for Attestation Results**</a> is the set of rules that define the [Attestation Results Appraisal](#ar-appraisal) procedure.
 
 ## Attester Structure
 
