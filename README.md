@@ -1,6 +1,6 @@
 # RATS Cheat Sheet
 
-This is intended as a quick reference to the main concepts defined in the [RATS architecture](https://www.ietf.org/archive/id/draft-ietf-rats-architecture-14.html).  All the pictures (except one) are taken from there.
+This is intended as a quick reference to the main concepts defined in the [RATS architecture](https://www.rfc-editor.org/rfc/rfc9334).  All the pictures (except one) are taken from there.
 
 ## Architecture at a Glance
 
